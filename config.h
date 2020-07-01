@@ -104,6 +104,8 @@ static const char *screenlockcmd[]  = { "/home/kiteab/scripts/screenlock.sh", NU
 static const char *incbacklightcmd[]  = { "/home/kiteab/scripts/inc-backlight.sh", NULL};
 static const char *decbacklightcmd[]  = { "/home/kiteab/scripts/dec-backlight.sh", NULL};
 
+static const char *kctogglecmd[]  = { "/home/kiteab/scripts/kc-tog.sh", NULL};
+
 static const char *screenshotcmd[] = { "flameshot", "gui", NULL };
 
 static Key keys[] = {
@@ -116,6 +118,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,    XK_p,                    spawn,          {.v = suspendcmd } },
 	{ MODKEY|ControlMask,  XK_s,                    spawn,          {.v = sktogglecmd } },
 	{ MODKEY|ControlMask,  XK_l,                    spawn,          {.v = screenlockcmd } },
+	{ MODKEY|ControlMask,  XK_k,                    spawn,          {.v = kctogglecmd } },
 	{ 0,                   XF86XK_AudioLowerVolume, spawn,          {.v = downvol } },
 	{ 0,                   XF86XK_AudioMute,        spawn,          {.v = mutevol } },
 	{ 0,                   XF86XK_AudioRaiseVolume, spawn,          {.v = upvol   } },
