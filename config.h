@@ -91,6 +91,7 @@ static const char *mutevol[] = { "/home/kiteab/scripts/vol-toggle.sh",  NULL };
 
 static const char *wpcmd[]  = { "/home/kiteab/scripts/wp-change.sh", NULL };
 static const char *sktogglecmd[]  = { "/home/kiteab/scripts/sck-tog.sh", NULL };
+static const char *nautilustogcmd[]  = { "/home/kiteab/scripts/nautilus-tog.sh", NULL };
 static const char scratchpadname[] = "scratchpad";
 static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "80x24", NULL };
 
@@ -115,6 +116,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,    XK_m,                    spawn,          {.v = setcolemakcmd } },
 	{ MODKEY|ShiftMask,    XK_p,                    spawn,          {.v = suspendcmd } },
 	{ MODKEY|ControlMask,  XK_s,                    spawn,          {.v = sktogglecmd } },
+	{ MODKEY,              XK_f,                    spawn,          {.v = nautilustogcmd } },
 	{ MODKEY|ControlMask,  XK_l,                    spawn,          {.v = screenlockcmd } },
 	{ 0,                   XF86XK_AudioLowerVolume, spawn,          {.v = downvol } },
 	{ 0,                   XF86XK_AudioMute,        spawn,          {.v = mutevol } },
@@ -147,7 +149,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,    XK_q,                    killclient,     {0} },
 	{ MODKEY,              XK_t,                    setlayout,      {.v = &layouts[0]} },
 	{ MODKEY,              XK_m,                    setlayout,      {.v = &layouts[2]} },
-	{ MODKEY,              XK_f,                    fullscreen,     {0} },
+	{ MODKEY|ControlMask,  XK_f,                    fullscreen,     {0} },
 	{ MODKEY|ShiftMask,    XK_f,                    togglefullscr,  {0} },
 	{ MODKEY,              XK_space,                setlayout,      {0} },
 	{ MODKEY|ShiftMask,    XK_space,                togglefloating, {0} },
