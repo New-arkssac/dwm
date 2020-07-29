@@ -48,13 +48,12 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Android Emulator", NULL,       NULL,       0,            1,           -1 },
-	{ "Emulator", NULL,       NULL,       0,            1,           -1 },
-	{ "quemu-system-i386", NULL,       NULL,       0,            1,           -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
-	{ "netease-cloud-music", NULL, NULL,  0,            1,           -1 },
-	{ "iease-music", NULL,    NULL,       0,            1,           -1 },
+	/* class                 instance    title       tags mask     isfloating   monitor */
+	{ "Android Emulator",    NULL,       NULL,       0,            1,           -1 },
+	{ "Emulator",            NULL,       NULL,       0,            1,           -1 },
+	{ "quemu-system-i386",   NULL,       NULL,       0,            1,           -1 },
+	{ "Firefox",             NULL,       NULL,       1 << 8,       0,           -1 },
+	{ "netease-cloud-music", NULL,       NULL,       0,            1,           -1 },
 };
 
 /* layout(s) */
