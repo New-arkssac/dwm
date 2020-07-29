@@ -54,6 +54,7 @@ static const Rule rules[] = {
 	{ "quemu-system-i386",   NULL,       NULL,       0,            1,           -1 },
 	{ "Firefox",             NULL,       NULL,       1 << 8,       0,           -1 },
 	{ "netease-cloud-music", NULL,       NULL,       0,            1,           -1 },
+	{ "conky",               NULL,       0,          0,            1,           -1 },
 };
 
 /* layout(s) */
